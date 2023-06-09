@@ -58,10 +58,8 @@ li:nth-child(even){
     background-color: var(--white);
 }
 
-.image-container{
+.signup-image{
     content: url('../assets/images/illustration-sign-up-mobile.svg');
-    width: 100%;
-    height: auto;
 }
 
 .signup-form, .success{
@@ -205,16 +203,13 @@ form{
     }
 
     .signup-image{
+        content: url('../assets/images/illustration-sign-up-desktop.svg');
         grid-column: 2;
     }
 
     .signup-form{
         padding: 4.625rem 4rem 4.625rem 2.5rem;
         grid-column: 1;
-    }
-
-    .image-container{
-        content: url('../assets/images/illustration-sign-up-desktop.svg');
     }
 
     #sectionSuccess{
@@ -226,5 +221,9 @@ form{
 
     .btn-dismiss{
         margin-top: 2.5rem;
+    }
+
+    .btn-submit, .btn-dismiss{
+        padding-block: 1.125rem .875rem;
     }
 }
